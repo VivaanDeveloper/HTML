@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Table layout css</title>
+        <style>
+            table{
+                width: 100% ;
+            }
+            .heading{
+                width: 100%;
+                height: 80px;
+                font-size: 30px;
+                text-align: center;
+                font-weight: 700;
+               
+                background-color: #94b4c1;
+            }
+            .heading-items{
+                width: 500px;
+                height: 75px;
+            }
+          td{
+            height: 100% ;
+            border-style: solid;
+            border-width:1px ;
+            border-color: black;
+          }
+          .Home{
+            height: 500px;
+            background-color: #DDDDDD;
+          }
+          .project{
+          height: 600px;
+            background-color: #e7f2e4;
+          }
+          .project-item{
+            width: 80%;
+            height: 500px;
+            background-color: lightgreen;
+            display:none;
+          }
+          .show-box{
+            height: 80px;
+            bottom: 10px;
+            color: #DDDDDD;
+            font-weight: 800;
+            font-size: 50px;
+            position: sticky;
+          background-color: rgb(10,12,14 )
+         
+
+          }
+          .show-box:hover+.project-item{
+            display: block;
+          }
+          .About{
+                height: 500px;
+                background-color: #27548A;
+              
+          }
+          .contact{
+           
+                height: 500px;
+                background-color: #FFC1DA;
+                
+          }
+         
+        
+        </style>
+    </head>
+    <body>
+        <table>
+            <!-- heading section -->
+            <tr class="heading" >
+                <td  class="heading-items">Home</td>
+                <td class="heading-items">Projects</td>
+                <td  class="heading-items">About</td>
+                <td  class="heading-items">contact</td>
+            </tr>
+            <!-- home section -->
+             <tr class="Home">
+                <td colspan="4"></td>
+             </tr>
+             <!-- Projects section -->
+             <tr class="project">
+                <td colspan="4"></td>
+             <h1 class="show-box">Projects</h1>
+                <div class="project-item"></div>
+             </tr>
+             <!-- About section -->
+             <tr class="About">
+                <td colspan="4"></td>
+             </tr>
+             <!-- contact section -->
+             <tr class="contact">
+                <td colspan="4"></td>
+             </tr>
+        </table>
+    </body>
+</html> 
