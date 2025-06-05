@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container {
+            width: 100%;
+            height: 100%;
+        }
+        .container-1 {
+            width: 100%;
+            height: 50%;
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .container-2 {
+            width: 100%;
+            height: 50%;
+            background-color: orange;
+        }
+        .box {
+            width: 20%;
+            height: 80%;
+            background-color: slateblue;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+        .box-1{
+            width: 100%;
+            height: 33.33%;
+            background-color: orange;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        .box-2 {
+            width: 100%;
+            height: 33.33%;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+            
+           .box-3{
+            width: 100%;
+            height: 33.33%;
+            background-color: green;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container-1">
+            <div class="box">
+                <img src="https://c.ndtvimg.com/2025-06/a2h09h0o_chris-gayle_625x300_03_June_25.jpg?im=FeatureCrop,algorithm=dnn," height="200px" width="200px" alt="Chris Gayle">
+            </div>
+            <div class="box">
+               <img src="https://www.m9.news/wp-content/uploads/2025/06/virat-kohli-rcb.jpg" height="200px" width="200px" alt="Virat Kohli">
+            </div>
+            <div class="box">
+                 <img src="https://documents.iplt20.com/playerheadshot/ipl/284/233.png" height="200px" width="200px" alt="Rohit Sharma">
+            </div>
+        </div>
+        <div class="container-2">
+            <div class="box-1"></div>
+            <div class="box-2">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ashoka_Chakra.svg/2048px-Ashoka_Chakra.svg.png" style="height:100px; width:100px;" alt="Ashoka Chakra">
+            </div>
+            <div class="box-3"></div>
+        </div>
+    </div>
+</body>
+</html>
